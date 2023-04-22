@@ -87,4 +87,18 @@
       margin-left: 7rem;
     }
   }
+
+  .top-nav {
+    display: flex;
+    padding: 1.6rem;
+    border-bottom: 0.1rem solid #ededed;
+    .avartar {
+      height: 3.2rem;
+      width: 3.2rem;
+    }
+
+    .left {
+      margin-left: auto;
+    }
+  }
 }

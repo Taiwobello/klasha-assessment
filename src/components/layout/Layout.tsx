@@ -92,6 +92,32 @@ const AppLayout = (props: AppLayoutProps) => {
           " "
         )}
       >
+        <div className={styles["top-nav"]}>
+          <div
+            className={[styles.left, "flex spaced-xl center-align"].join(" ")}
+          >
+            <div className="flex center-align spaced">
+              <img
+                src="/icons/avartar.svg"
+                alt="user"
+                className={styles.avartar}
+              />
+              <img
+                src="/icons/dropdown.svg"
+                alt="dropdown"
+                className="generic-icon small"
+              />
+            </div>
+            <div className="flex center-align spaced">
+              <strong>En</strong>
+              <img
+                src="/icons/dropdown.svg"
+                alt="dropdown"
+                className="generic-icon small"
+              />
+            </div>
+          </div>
+        </div>
         {children}
       </main>
     </section>

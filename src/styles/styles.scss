@@ -111,6 +111,24 @@ a:visited {
   }
 }
 
+.margin-right {
+  &-small {
+    margin-right: 1.2rem;
+  }
+
+  &-medium {
+    margin-right: 1.6rem;
+  }
+
+  &-large {
+    margin-right: 2.4rem;
+  }
+
+  &-xl {
+    margin-right: 3.6rem;
+  }
+}
+
 .flex {
   display: flex;
   &.column {
@@ -169,5 +187,19 @@ a:visited {
   }
   & .flex-one {
     flex: 1;
+  }
+}
+
+.generic-icon {
+  height: 1.8rem;
+  width: auto;
+  &.small {
+    height: 0.8rem;
+  }
+  &.medium {
+    height: 1.5rem;
+  }
+  &.large {
+    height: 2rem;
   }
 }
