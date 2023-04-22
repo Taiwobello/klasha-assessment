@@ -1,4 +1,5 @@
 .app-layout {
+  display: flex;
   .logo {
     margin-bottom: 2rem;
   }
@@ -8,6 +9,14 @@
     width: 28rem;
     min-height: 100vh;
     background-color: #fffbf7;
+    position: fixed;
+    top: 0;
+    left: 0rem;
+    transition: 0.3s ease-out;
+
+    &.collapse {
+      transform: translateX(-21rem);
+    }
 
     .title {
       color: #8d8d8d;
