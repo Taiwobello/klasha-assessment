@@ -48,4 +48,43 @@
       }
     }
   }
+
+  .right-btn {
+    position: absolute;
+    bottom: 4rem;
+    left: 2rem;
+    opacity: 0;
+    z-index: -1;
+    background: transparent;
+    border: none;
+
+    &.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .right-arrow {
+      transform: rotate(270deg);
+      height: 1.5rem;
+    }
+  }
+
+  .support-btn {
+    border-radius: 4rem;
+    margin-top: 4rem;
+  }
+
+  .left-arrow {
+    transform: rotate(90deg);
+  }
+
+  .main-content {
+    width: 100%;
+    margin-left: 28.5rem;
+    transition: 0.3s ease-out;
+
+    &.collapse {
+      margin-left: 7rem;
+    }
+  }
 }

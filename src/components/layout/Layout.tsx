@@ -87,7 +87,13 @@ const AppLayout = (props: AppLayoutProps) => {
           />{" "}
         </Button>
       </div>
-      <main>{children}</main>
+      <main
+        className={[styles["main-content"], collapse && styles.collapse].join(
+          " "
+        )}
+      >
+        {children}
+      </main>
     </section>
   );
 };
