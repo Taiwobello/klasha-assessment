@@ -1,0 +1,42 @@
+.app-layout {
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .side-nav {
+    padding: 4rem;
+    width: 28rem;
+    min-height: 100vh;
+    background-color: #fffbf7;
+
+    .title {
+      color: #8d8d8d;
+      margin-bottom: 1.6rem;
+      margin-top: 3rem;
+    }
+
+    .links {
+      & > * {
+        margin-bottom: 1.6rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .link {
+        color: #0a0a0a;
+        display: flex;
+        align-items: center;
+
+        &.active {
+          color: #ef2c5a;
+        }
+
+        &:hover {
+          color: #ef2c5a;
+        }
+      }
+    }
+  }
+}
