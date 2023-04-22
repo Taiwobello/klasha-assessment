@@ -1,0 +1,39 @@
+.button {
+  border-radius: 0.8rem;
+  padding: 1rem 1.8rem;
+  border: 0.2rem solid #0a0a0a;
+  outline: none;
+  transition: 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    &.primary {
+      background-color: #b7bcc2;
+      border-color: #b7bcc2;
+      opacity: 1;
+    }
+  }
+
+  &.primary {
+    color: #0a0a0a;
+    background-color: white;
+  }
+  &.accent {
+    border: 0.2rem solid #ef2c5a;
+    color: white;
+    background-color: #ef2c5a;
+  }
+
+  &.icon-only {
+    padding: 0;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
