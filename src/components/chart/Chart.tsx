@@ -17,11 +17,20 @@ interface ChartProps {
   hideYaxis?: boolean;
   dataKey?: string;
   dataKeyXAxis?: string;
+  showCartesianGrid?: boolean;
 }
 
 function Chart(props: ChartProps) {
-  const { data, height, width, hideXaxis, hideYaxis, dataKey, dataKeyXAxis } =
-    props;
+  const {
+    data,
+    height,
+    width,
+    hideXaxis,
+    hideYaxis,
+    dataKey,
+    dataKeyXAxis,
+    showCartesianGrid,
+  } = props;
   return (
     <ResponsiveContainer width={width || "100%"} height={height || 400}>
       <AreaChart
@@ -35,14 +44,26 @@ function Chart(props: ChartProps) {
           bottom: 0,
         }}
       >
+        <defs>
+          <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#ef2c5a69" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#ef2c5a69" stopOpacity={0} />
+          </linearGradient>
+          <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+          </linearGradient>
+        </defs>
         <XAxis dataKey={dataKeyXAxis} hide={hideXaxis} />
-        <YAxis hide={hideYaxis} />
+        <YAxis hide={hideYaxis} axisLine={false} />
+        {showCartesianGrid && <CartesianGrid vertical={false} />}
         <Tooltip />
         <Area
-          type="monotone"
+          type="linear"
           dataKey={dataKey || ""}
           stroke="#EF2C5A"
-          fill="#ef2c5a69"
+          fill="url(#colorUv)"
+          fillOpacity={1}
         />
       </AreaChart>
     </ResponsiveContainer>

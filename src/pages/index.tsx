@@ -74,6 +74,7 @@ export default function Home() {
               dataKey="amt"
               height={240}
               dataKeyXAxis="date"
+              showCartesianGrid
             />
           </div>
         </div>
