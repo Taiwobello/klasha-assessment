@@ -87,11 +87,7 @@ const AppLayout = (props: AppLayoutProps) => {
           />{" "}
         </Button>
       </div>
-      <main
-        className={[styles["main-content"], collapse && styles.collapse].join(
-          " "
-        )}
-      >
+      <main className={[styles["main"], collapse && styles.collapse].join(" ")}>
         <div className={styles["top-nav"]}>
           <div
             className={[styles.left, "flex spaced-xl center-align"].join(" ")}
@@ -118,7 +114,7 @@ const AppLayout = (props: AppLayoutProps) => {
             </div>
           </div>
         </div>
-        {children}
+        <div className={styles["main-content"]}>{children}</div>
       </main>
     </section>
   );

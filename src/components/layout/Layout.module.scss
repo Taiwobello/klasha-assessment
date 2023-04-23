@@ -78,10 +78,11 @@
     transform: rotate(90deg);
   }
 
-  .main-content {
+  .main {
     width: 100%;
     margin-left: 28.5rem;
     transition: 0.3s ease-out;
+    min-height: 100vh;
 
     &.collapse {
       margin-left: 7rem;
@@ -100,5 +101,10 @@
     .left {
       margin-left: auto;
     }
+  }
+
+  .main-content {
+    margin-top: 10rem;
+    padding: 0 3.2rem;
   }
 }

@@ -337,3 +337,125 @@ export const navLinks: NavLink[] = [
     ],
   },
 ];
+
+interface SalesData {
+  name: string;
+  amt: number;
+}
+
+interface SalesChart {
+  date: string;
+  value: string;
+  period: string;
+  data: SalesData[];
+}
+
+export const salesData: SalesChart[] = [
+  {
+    date: "24 Aug - 01 Sep 21",
+    value: "₦1,652.50",
+    period: "This Week",
+    data: [
+      {
+        name: "Sales A",
+        amt: 4000,
+      },
+      {
+        name: "Sales B",
+        amt: 3000,
+      },
+      {
+        name: "Sales C",
+        amt: 2000,
+      },
+      {
+        name: "Sales D",
+        amt: 2780,
+      },
+
+      {
+        name: "Sales E",
+        amt: 1890,
+      },
+      {
+        name: "Sales F",
+        amt: 2390,
+      },
+      {
+        name: "Sales G",
+        amt: 3490,
+      },
+    ],
+  },
+  {
+    date: "24 Aug - 01 Sep 21",
+    value: "₦1,652.50",
+    period: "This Month",
+    data: [
+      {
+        name: "Sales A",
+        amt: 3000,
+      },
+      {
+        name: "Sales B",
+        amt: 2000,
+      },
+      {
+        name: "Sales C",
+        amt: 2780,
+      },
+      {
+        name: "Sales D",
+        amt: 1890,
+      },
+      {
+        name: "Sales E",
+        amt: 2390,
+      },
+      {
+        name: "Sales F",
+        amt: 3490,
+      },
+      {
+        name: "Sales G",
+        amt: 4000,
+      },
+    ],
+  },
+
+  {
+    date: "24 Aug - 01 Sep 21",
+    value: "₦1,652.50",
+    period: "Last Month",
+    data: [
+      {
+        name: "Sales A",
+        amt: 4000,
+      },
+      {
+        name: "Sales B",
+        amt: 3000,
+      },
+      {
+        name: "Sales C",
+        amt: 2000,
+      },
+      {
+        name: "Sales D",
+        amt: 2780,
+      },
+      {
+        name: "Sales E",
+        amt: 1890,
+      },
+      {
+        name: "Sales F",
+        amt: 2390,
+      },
+      {
+        name: "Sales G",
+        amt: 3490,
+      },
+    ],
+  },
+];
