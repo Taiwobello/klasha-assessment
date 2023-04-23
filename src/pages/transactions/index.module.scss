@@ -1,0 +1,41 @@
+.transaction-page {
+  border: 0.1rem solid #f0f0f0;
+  padding-bottom: 8rem;
+
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid #f0f0f0;
+  }
+
+  .title {
+    border-bottom: 0.1rem solid #f0f0f0;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .input-wrapper {
+    border: 0.1rem solid #f0f0f0;
+    width: 20rem;
+    position: relative;
+    margin: 1rem;
+    color: #565c69;
+
+    .input {
+      font-size: 1.4rem;
+      padding: 1rem;
+      padding-left: 1.4rem;
+      width: 90%;
+      border: none;
+      background-color: transparent;
+    }
+
+    label {
+      position: absolute;
+      top: 0.8rem;
+      right: 2rem;
+    }
+  }
+}

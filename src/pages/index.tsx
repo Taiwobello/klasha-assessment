@@ -7,7 +7,7 @@ import Button from "@/components/button/Button";
 export default function Home() {
   return (
     <div>
-      <p>Sales overview</p>
+      <p className="page-title">Sales overview</p>
       <div className={styles["sales-overview"]}>
         <div className={styles["overview-card"]}>
           <p className="margin-bottom-small text-small">Today&apos;s sales</p>

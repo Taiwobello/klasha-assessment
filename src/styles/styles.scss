@@ -35,6 +35,13 @@ a:visited {
   transition: 0.3s ease-out;
 }
 
+input,
+input:active {
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
 .primary-color {
   color: #ef2c5a;
 }
@@ -221,4 +228,9 @@ a:visited {
 
 .text-xl {
   font-size: 4.8rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
 }
