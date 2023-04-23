@@ -504,3 +504,9 @@ export const salesChart = [
     amt: 2100,
   },
 ];
+
+export const defaultPagination = {
+  total: 0,
+  page: 1,
+  pageSize: 10,
+};
