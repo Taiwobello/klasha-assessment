@@ -3,7 +3,8 @@
   grid-template-columns: repeat(4, minmax(20rem, 1fr));
   grid-template-rows: repeat(1, 26rem);
   grid-gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 2.4rem;
+  margin-bottom: 5rem;
   grid-auto-rows: 1fr;
 
   .overview-card {
@@ -21,6 +22,48 @@
     }
 
     .bottom {
+      margin-top: auto;
+    }
+  }
+}
+
+.sales-chart-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+
+  .sales-chart {
+    width: 70%;
+
+    .chart {
+      border: 0.2rem solid #0a0a0a;
+      border-radius: 0.8rem;
+      padding: 3rem 2rem;
+      margin-top: 2rem;
+      height: 28rem;
+    }
+  }
+
+  .send-wire {
+    width: 28%;
+    background-color: #ef2c5a;
+    background-image: url(/images/lines.svg);
+    color: white;
+    height: 28rem;
+    margin-top: 6rem;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    .wire-text {
+      font-size: 2rem;
+      line-height: 3.2rem;
+    }
+
+    .wire-btn {
       margin-top: auto;
     }
   }

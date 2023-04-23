@@ -23,7 +23,7 @@ function Chart(props: ChartProps) {
   const { data, height, width, hideXaxis, hideYaxis, dataKey, dataKeyXAxis } =
     props;
   return (
-    <ResponsiveContainer width={width || "105%"} height={height || 400}>
+    <ResponsiveContainer width={width || "100%"} height={height || 400}>
       <AreaChart
         width={700}
         height={400}
@@ -42,7 +42,7 @@ function Chart(props: ChartProps) {
           type="monotone"
           dataKey={dataKey || ""}
           stroke="#EF2C5A"
-          fill="#EF2C5A"
+          fill="#ef2c5a69"
         />
       </AreaChart>
     </ResponsiveContainer>

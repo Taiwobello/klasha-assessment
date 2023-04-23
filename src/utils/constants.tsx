@@ -459,3 +459,48 @@ export const salesData: SalesChart[] = [
     ],
   },
 ];
+
+export const salesChart = [
+  {
+    name: "Page A",
+    date: "20 Aug",
+    pv: 2400,
+    amt: 2400,
+  },
+  {
+    name: "Page B",
+    date: "21 Aug",
+    pv: 1398,
+    amt: 2210,
+  },
+  {
+    name: "Page C",
+    date: "22 Aug",
+    pv: 9800,
+    amt: 2290,
+  },
+  {
+    name: "Page D",
+    date: "24 Aug",
+    pv: 3908,
+    amt: 2000,
+  },
+  {
+    name: "Page E",
+    date: "25 Aug",
+    pv: 4800,
+    amt: 2181,
+  },
+  {
+    name: "Page F",
+    date: "26 Aug",
+    pv: 3800,
+    amt: 2500,
+  },
+  {
+    name: "Page G",
+    date: "27 Aug",
+    pv: 4300,
+    amt: 2100,
+  },
+];

@@ -30,6 +30,11 @@
     background-color: #ef2c5a;
   }
 
+  &.secondary {
+    color: white;
+    background-color: #0a0a0a;
+  }
+
   &.icon-only {
     padding: 0;
     &:hover {
