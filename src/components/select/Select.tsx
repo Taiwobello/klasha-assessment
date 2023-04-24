@@ -29,8 +29,6 @@ const Select = (props: SelectProps) => {
     fitContent,
   } = props;
 
-  console.log("value", value);
-
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedMap, setSelectedMap] = useState<any>({});
   const [options, setOptions] = useState<Option[]>([]);
