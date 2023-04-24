@@ -3,11 +3,12 @@ import Chart from "@/components/chart/Chart";
 import styles from "./index.module.scss";
 import { currencyOption, salesChart, salesData } from "@/utils/constants";
 import Button from "@/components/button/Button";
-import Select, { Option } from "@/components/select/Select";
+import Select from "@/components/select/Select";
 import { useState } from "react";
 
 export default function Home() {
   const [currency, setCurrency] = useState("usd");
+  const [email, setEmail] = useState("");
 
   return (
     <div>
@@ -46,7 +47,7 @@ export default function Home() {
       </div>
       <div className={styles["sales-chart-wrapper"]}>
         <div className={styles["sales-chart"]}>
-          <div className="flex between">
+          <div className="flex spaced">
             <div className="flex spaced center-align">
               <p>Sales</p>
               <strong className="text-small primary-color">7 days</strong>
@@ -54,13 +55,28 @@ export default function Home() {
 
               <Select
                 options={currencyOption}
-                className={styles.select}
                 value={currency}
                 onSelect={(value) => setCurrency(String(value))}
                 fitContent
               />
-              <p className="grey text-small">Email</p>
             </div>
+            <Select
+              options={[
+                {
+                  value: "email",
+                  label: "Email",
+                },
+                {
+                  value: "pdf",
+                  label: "PDF",
+                },
+              ]}
+              className="flex-one"
+              value={email}
+              onSelect={(value) => setEmail(String(value))}
+              placeholder="Email"
+              responsive
+            />
             <div className="flex spaced center-align">
               <Button>
                 <img
