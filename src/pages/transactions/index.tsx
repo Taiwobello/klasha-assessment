@@ -105,7 +105,7 @@ function Index() {
           </label>
         </div>
 
-        <div className="flex spaced">
+        <div className="flex spaced margin-right-small">
           <Button className="text-small">
             Filter{" "}
             <img

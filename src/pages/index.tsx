@@ -29,7 +29,7 @@ export default function Home() {
             ].join()}
             key={index}
           >
-            <p>{sales.date}</p>
+            <p className="margin-bottom-medium">{sales.date}</p>
             <Chart
               data={sales.data}
               dataKey="amt"
