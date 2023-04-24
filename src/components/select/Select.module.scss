@@ -1,4 +1,4 @@
-$placeholder: #414042;
+$placeholder: #565c69;
 
 .select-wrapper {
   background-color: white;
@@ -11,7 +11,11 @@ $placeholder: #414042;
   display: inline-block;
   border-radius: 0.8rem;
   width: 20rem;
-  border: 0.2rem solid #0a0a0a;
+  border: 0.2rem solid #f0f0f0;
+
+  &.selected {
+    border-color: #0a0a0a;
+  }
 
   &.active {
     z-index: 5;

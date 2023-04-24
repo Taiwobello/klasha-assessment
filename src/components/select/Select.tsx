@@ -29,6 +29,8 @@ const Select = (props: SelectProps) => {
     fitContent,
   } = props;
 
+  console.log("value", value);
+
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedMap, setSelectedMap] = useState<any>({});
   const [options, setOptions] = useState<Option[]>([]);
@@ -126,6 +128,7 @@ const Select = (props: SelectProps) => {
           showDropdown ? styles.active : "",
           responsive && styles.responsive,
           fitContent && styles["fit-content"],
+          value && styles.selected,
           className,
         ].join(" ")}
         onClick={handleSelectClick}
