@@ -113,9 +113,9 @@ const Select = (props: SelectProps) => {
       <path
         d="M1 1L5 5L9 1"
         stroke="#0A0A0A"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
