@@ -1,3 +1,4 @@
+import { Option } from "@/components/select/Select";
 import { ReactNode } from "react";
 
 interface SubLink {
@@ -510,3 +511,14 @@ export const defaultPagination = {
   page: 1,
   pageSize: 10,
 };
+
+export const currencyOption: Option[] = [
+  {
+    label: "USD",
+    value: "usd",
+  },
+  {
+    label: "NGN",
+    value: "ngn",
+  },
+];

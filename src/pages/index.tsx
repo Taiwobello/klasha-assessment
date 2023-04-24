@@ -1,10 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Chart from "@/components/chart/Chart";
 import styles from "./index.module.scss";
-import { salesChart, salesData } from "@/utils/constants";
+import { currencyOption, salesChart, salesData } from "@/utils/constants";
 import Button from "@/components/button/Button";
+import Select, { Option } from "@/components/select/Select";
+import { useState } from "react";
 
 export default function Home() {
+  const [currency, setCurrency] = useState("usd");
+
   return (
     <div>
       <p className="page-title">Sales overview</p>
@@ -47,14 +51,14 @@ export default function Home() {
               <p>Sales</p>
               <strong className="text-small primary-color">7 days</strong>
               <strong className="text-small">30 days</strong>
-              <Button>
-                USD{" "}
-                <img
-                  src="/icons/dropdown.svg"
-                  alt="dropdown"
-                  className="generic-icon small margin-left-small"
-                />
-              </Button>
+
+              <Select
+                options={currencyOption}
+                className={styles.select}
+                value={currency}
+                onSelect={(value) => setCurrency(String(value))}
+                fitContent
+              />
               <p className="grey text-small">Email</p>
             </div>
             <div className="flex spaced center-align">
